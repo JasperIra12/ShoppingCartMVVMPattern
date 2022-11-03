@@ -26,7 +26,6 @@ or
 
 # Screenshots
 
-
-![Screenshot (4767)](https://user-images.githubusercontent.com/108800492/199645549-f0affb6d-2679-475d-9228-50bb2bdc7b46.png)
-![Screenshot (4768)](https://user-images.githubusercontent.com/108800492/199645556-ab923504-116a-48d7-b976-8b5bed4fa373.png)
+![312314682_1477375882750818_1343012752205841344_n](https://user-images.githubusercontent.com/108800492/199645629-848fc12c-10fb-4a9d-a625-4f1cf8152477.jpg)
+![313038449_463482755630492_2725771666647890915_n](https://user-images.githubusercontent.com/108800492/199645630-2c2de5ae-dde9-4829-8c42-495a18d2d86f.jpg)
 
