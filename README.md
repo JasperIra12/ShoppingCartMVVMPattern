@@ -6,11 +6,11 @@ Shopping Cart NVVM pattern
 
 NPM
 
-```npm i react-native-calendars```
+```npm i act_mvvm_shop_cart```
 
 or Yarn
 
-```yarn add react-native-calendars```
+```yarn add act_mvvm_shop_cart```
 
 # Usage
 
