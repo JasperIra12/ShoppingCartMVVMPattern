@@ -1,6 +1,6 @@
 {
-  "name": "ShoppingCartApp",
-  "version": "0.0.1",
+  "name": "act_mvvm_shop_cart",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -43,5 +43,21 @@
       "json",
       "node"
     ]
-  }
+  },
+  "description": "Mini app for Shopping cart MVVM pattern",
+  "main": "App.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasperIra12/ShoppingCartMVVMPattern.git"
+  },
+  "keywords": [
+    "[\"CustomButton\"",
+    "\"CartItem\"]"
+  ],
+  "author": " <JasperC>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasperIra12/ShoppingCartMVVMPattern/issues"
+  },
+  "homepage": "https://github.com/JasperIra12/ShoppingCartMVVMPattern#readme"
 }
