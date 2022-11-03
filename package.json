@@ -1,6 +1,6 @@
 {
   "name": "act_mvvm_shop_cart",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "scripts": {
     "android": "react-native run-android",
