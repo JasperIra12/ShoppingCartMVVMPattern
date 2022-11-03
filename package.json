@@ -1,6 +1,6 @@
 {
   "name": "act_mvvm_shop_cart",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": false,
   "scripts": {
     "android": "react-native run-android",
@@ -89,5 +89,8 @@
   "eslintIgnore": [
     "node_modules/",
     "lib/"
-  ]
+  ],
+  "directories": {
+    "lib": "lib"
+  }
 }
