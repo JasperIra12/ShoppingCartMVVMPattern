@@ -1,5 +1,4 @@
 import { createSlice, } from '@reduxjs/toolkit';
-import PropTypes from 'prop-types'
 
 type ProductTypes = {
   id:number,

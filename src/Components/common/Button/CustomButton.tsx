@@ -1,6 +1,5 @@
 import { StyleSheet, Text, View,TouchableOpacity } from 'react-native'
 import React from 'react'
-import PropTypes from 'prop-types'
 
 type CustomButtonProps = {
   action:any,
@@ -21,13 +20,7 @@ const CustomButton = ({item,label,action}:CustomButtonProps) => {
   )
 }
 
-CustomButton.propTypes = {
-  action: PropTypes.any,
-  item: PropTypes.shape({
-    qty: PropTypes.number
-  }),
-  label: PropTypes.string
-}
+
 
 export default CustomButton
 
