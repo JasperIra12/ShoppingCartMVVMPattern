@@ -2,6 +2,16 @@
 
 Shopping Cart NVVM pattern, Add and Reduce quantity and when quantity is Zero `-` button is disabled 
 
+# Supported React Native and React Version
+
+React Native
+
+ `0.70.4`
+
+React
+
+`18.1.0`
+
 # Installation
 
 NPM
@@ -188,4 +198,89 @@ export default App
 
 ![312314682_1477375882750818_1343012752205841344_n](https://user-images.githubusercontent.com/108800492/199645629-848fc12c-10fb-4a9d-a625-4f1cf8152477.jpg)
 ![313038449_463482755630492_2725771666647890915_n](https://user-images.githubusercontent.com/108800492/199645630-2c2de5ae-dde9-4829-8c42-495a18d2d86f.jpg)
+
+# Versioning Changelogs
+ 
+ Versions
+ 
+```
+Version 0.0.19 - update Versioning ChangeLogs and Supportive React Native Version and React version
+```
+
+```
+Version 0.0.18 - update README.md
+```
+
+```
+Version 0.0.17 - update Convention
+```
+
+```
+Version 0.0.16 - update README.md
+```
+
+```
+Version 0.0.16 - update Conventions
+```
+
+```
+Version 0.0.15 - update package.json devDependency
+```
+
+```
+Version 0.0.14 - update README.md
+```
+
+```
+Version 0.0.13 - update components Path name into Pascal Case
+```
+
+```
+Version 0.0.12 - update README.md
+```
+
+```
+Version 0.0.11 - Update conventions
+```
+
+```
+Version 0.0.10 - update README.md 
+```
+
+```
+Version 0.0.9 - update Component Design
+```
+
+```
+Version 0.0.8 - update README.md with Documentation of codes
+```
+
+```
+Version 0.0.7 - update conventions
+```
+
+```
+Version 0.0.6 - Update README.md
+```
+
+```
+Version 0.0.5 - Applying Mini-app Conventions
+```
+
+```
+Version 0.0.4 - Immutability of Redux
+```
+
+```
+Version 0.0.3 - Add README.md
+```
+
+```
+Version 0.0.2 - add builder bob to the package
+```
+
+```
+Version 0.0.1 - Create Components of simple Shopping Cart
+```
+
 
