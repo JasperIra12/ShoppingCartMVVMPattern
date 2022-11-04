@@ -24,7 +24,8 @@ or
 
  You can use ItemCart like this with basic parameters,
 
-  ```<View style={{ borderBottomWidth:2,marginBottom:10,flexDirection:"row"}}> 
+```
+  <View style={{ borderBottomWidth:2,marginBottom:10,flexDirection:"row"}}> 
         <ItemCart
             data = {data}
             addQty ={function}
@@ -36,7 +37,8 @@ or
 And Let say you have a Data like this
 
 
-```const data = [
+```
+const data = [
   {
       id:1,
       prodName:'Alaska',
@@ -56,7 +58,8 @@ And Let say you have a Data like this
 
   And Create an Add Quantity function like this
 
-  ```const updateAddStatsInc = (id) => {
+  ```
+  const updateAddStatsInc = (id) => {
   const isSelected = cartData.find((sel) => sel.id === id )
   
   if (isSelected){
@@ -74,7 +77,8 @@ And Let say you have a Data like this
 
 And to Reduce Quantity, just change function name and change `+` into `-` sign, sample code like this
 
-```const updateReduceStatsInc = (id) => {
+```
+const updateReduceStatsInc = (id) => {
   const isSelected = cartData.find((sel) => sel.id === id )
   
   if (isSelected){
@@ -92,18 +96,20 @@ And to Reduce Quantity, just change function name and change `+` into `-` sign, 
 
 and now let's set function name into basic parameters of CartItem and set data into the useState we made
 
-```<View style={{ borderBottomWidth:2,marginBottom:10,flexDirection:"row"}}> 
+```
+<View style={{ borderBottomWidth:2,marginBottom:10,flexDirection:"row"}}> 
         <ItemCart
             data = {cartData}
             addQty ={updateAddStatsInc}
             removeQty={updateReduceStatsInc
         />
-    </View>
+</View>
 ```
 
 Complete Code is look like this
 
-```import { StyleSheet, Text, View } from 'react-native'
+```
+import { StyleSheet, Text, View } from 'react-native'
 import React, {useState} from 'react'
 import { CustomButton, CartItem } from 'act_mvvm_shop_cart' 
 
