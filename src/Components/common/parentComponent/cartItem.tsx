@@ -21,7 +21,6 @@ const CartItem = ({data,addQty,removeQty}:any) => {
     }}>
         {data.map((item:ProductTypes,i:number) => {
             return (
-              <View key={i} style={{flex:1}}>
               <View key={i} style={{borderBottomWidth:2,marginBottom:10,flexDirection:"row"}}>
                     <View key={i}>
                         <Text >Name: {item.prodName}</Text>
@@ -32,7 +31,6 @@ const CartItem = ({data,addQty,removeQty}:any) => {
                     <Text>{item.qty}</Text>
                     <CustomButton label={'+'} item={item} action={() => addQty(item.id)}/>
                 </View>
-              </View>
               </View>
             )
         })}

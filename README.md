@@ -22,7 +22,7 @@ or
 
 # Sample Code
 
- You can use ItemCart like this with basic parameters,
+ `You can use ItemCart like this with basic parameters,`
 
   ```<View style={{ borderBottomWidth:2,marginBottom:10,flexDirection:"row"}}> 
         <ItemCart
@@ -30,9 +30,10 @@ or
             addQty ={function}
             removeQty={function}
         />
-    </View>```
+    </View> 
+```
 
-And Let say you have a Data like this
+`And Let say you have a Data like this`
 
 ```const data = [
   {
@@ -44,14 +45,15 @@ And Let say you have a Data like this
       id:5,
       prodName:'Bear Brand',
       qty:3
-  }]```
+  }]
+  ```
 
 
-   Create a state for your data, this state will be use to update Quantity of your data, just set your constant variable of data in useState, sample code like this
+   `Create a state for your data, this state will be use to update Quantity of your data, just set your constant variable of data in useState, sample code like this`
     
   ```const [cartData, setCartData] = useState(data)```
 
-  And Create an Add Quantity function like this
+  `And Create an Add Quantity function like this`
 
   ```const updateAddStatsInc = (id) => {
   const isSelected = cartData.find((sel) => sel.id === id )
@@ -66,9 +68,10 @@ And Let say you have a Data like this
     data
   }
 
-}```
+}
+```
 
-And to Reduce Quantity, just change function name and change `+` into `-` sign, sample code like this
+`And to Reduce Quantity, just change function name and change `+` into `-` sign, sample code like this`
 
 ```const updateReduceStatsInc = (id) => {
   const isSelected = cartData.find((sel) => sel.id === id )
@@ -83,9 +86,10 @@ And to Reduce Quantity, just change function name and change `+` into `-` sign, 
     data
   }
 
-}```
+}
+```
 
-and now let's set function name into basic parameters of CartItem and set data into the useState we made
+`and now let's set function name into basic parameters of CartItem and set data into the useState we made`
 
 ```<View style={{ borderBottomWidth:2,marginBottom:10,flexDirection:"row"}}> 
         <ItemCart
@@ -93,9 +97,10 @@ and now let's set function name into basic parameters of CartItem and set data i
             addQty ={updateAddStatsInc}
             removeQty={updateReduceStatsInc
         />
-    </View>```
+    </View>
+```
 
-Complete Code is look like this
+`Complete Code is look like this`
 
 ```import { StyleSheet, Text, View } from 'react-native'
 import React, {useState} from 'react'
@@ -162,7 +167,9 @@ const updateReduceStatsInc = (id) => {
   )
 }
 
-export default App```
+export default App
+
+```
 
   
 
