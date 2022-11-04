@@ -1,5 +1,5 @@
-import { getProducts } from "../../Data/ProductService";
+import { getProducts } from "../../data/productService";
 
-export async function GetProductsUseCase() {
+export async function getProductsUseCase() {
     return (getProducts())
 }

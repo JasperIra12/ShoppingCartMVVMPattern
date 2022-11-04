@@ -1,5 +1,5 @@
-import { Cart } from "../Constant/dummy";
+import { cart } from "../constant/dummy";
 
 export const getAllInCart = () => {
-    return {result:Cart}
+    return {result:cart}
 }

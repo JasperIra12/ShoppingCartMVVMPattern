@@ -36,7 +36,7 @@ const product = createSlice({
       }
     },
 
-    ReduceQty: (state, action) => {
+    reduceQty: (state, action) => {
       const data = state.productCart.find((item: { id: any; }) => item.id === action.payload);
       if (data) {
         const updateQty = state.productCart.map((item: { id: any; qty: number; }) =>
@@ -56,7 +56,7 @@ const product = createSlice({
 
 });
 
-export const { saveCart, addQty, ReduceQty } =
+export const { saveCart, addQty, reduceQty } =
   product.actions;
 
 export default product.reducer;

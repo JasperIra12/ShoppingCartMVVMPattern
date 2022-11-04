@@ -1,7 +1,7 @@
-import { useState } from "react"
-import { GetProductsUseCase } from "../../Service/Products/GetAllCart";
+import { useState } from "react"    
+import { getProductsUseCase } from "../../service/products/getAllCart";
 import {useDispatch,useSelector} from 'react-redux'
-import { saveCart, addQty,ReduceQty } from "../../Redux/Products/ProductSlice";
+import { saveCart, addQty,reduceQty } from "../../Redux/products/productSlice";
 
 
 export default function ProductListViewModel() {
@@ -10,7 +10,7 @@ export default function ProductListViewModel() {
     const all_cart = useSelector((state:any) => state.all_cart.productCart)
     async function getProducts() {
 
-        const {result} = await GetProductsUseCase();
+        const {result} = await getProductsUseCase();
         dispatch(saveCart(result))
     }
 
@@ -18,7 +18,7 @@ export default function ProductListViewModel() {
         dispatch(addQty(item))
     }
     const updateReduceStatsInc = (item:number | undefined) =>  {
-        dispatch(ReduceQty(item))
+        dispatch(reduceQty(item))
     }
 
     return {

@@ -1,4 +1,4 @@
-const Cart = [
+const cart = [
     {
         id:1,
         prodName:'Alaska',
@@ -13,5 +13,5 @@ const Cart = [
 ]
 
 export {
-    Cart
+    cart
 }
