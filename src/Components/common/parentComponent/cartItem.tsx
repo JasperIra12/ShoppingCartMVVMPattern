@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity} from 'react-native'
 import React,{useEffect} from 'react'
-import productModel from '../../../screen/productView/productList'
-import CustomButton from '../button/customButton'
+import productModel from '../../../screen/ProductView/ProductList'
+import CustomButton from '../Button/CustomButton'
 // import productModel from './ProductViewModel'
 // import CustomButton from '../../Components/common/Button/CustomButton'
 
