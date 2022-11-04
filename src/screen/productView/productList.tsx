@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, TouchableOpacity} from 'react-native'
 import React,{useEffect} from 'react'
 import productModel from './useProductViewModel'
-import CustomButton from '../../../lib/commonjs/Components/common/Button/CustomButton'
-import CartItem from '../../../lib/commonjs/Components/common/Parent_component/CartItem'
+import CustomButton from '../../../lib/commonjs/components/common/button/customButton'
+import CartItem from '../../../lib/commonjs/components/common/parentComponent/cartItem'
 type ProductTypes = {
   id?:number,
   prodName:string,
