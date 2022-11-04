@@ -1,6 +1,6 @@
 # Introduction
 
-Shopping Cart NVVM pattern 
+Shopping Cart NVVM pattern, Add and Reduce quantity and when quantity is Zero `-` button is disabled 
 
 # Installation
 
@@ -19,6 +19,152 @@ or Yarn
 or 
 
 `import { CustomButton, CartItem } from 'act_mvvm_shop_cart/src/Components/Common_index'`
+
+# Sample Code
+
+ You can use ItemCart like this with basic parameters,
+
+  ```<View style={{ borderBottomWidth:2,marginBottom:10,flexDirection:"row"}}> 
+        <ItemCart
+            data = {data}
+            addQty ={function}
+            removeQty={function}
+        />
+    </View>```
+
+And Let say you have a Data like this
+
+```const data = [
+  {
+      id:1,
+      prodName:'Alaska',
+      qty:0
+  },
+  {
+      id:5,
+      prodName:'Bear Brand',
+      qty:3
+  }]```
+
+
+   Create a state for your data, this state will be use to update Quantity of your data, just set your constant variable of data in useState, sample code like this
+    
+  ```const [cartData, setCartData] = useState(data)```
+
+  And Create an Add Quantity function like this
+
+  ```const updateAddStatsInc = (id) => {
+  const isSelected = cartData.find((sel) => sel.id === id )
+  
+  if (isSelected){
+    let {qty} = isSelected
+    isSelected.qty = qty+1
+    setCartData([...cartData])
+    
+    console.log(cartData)
+  }else{
+    data
+  }
+
+}```
+
+And to Reduce Quantity, just change function name and change `+` into `-` sign, sample code like this
+
+```const updateReduceStatsInc = (id) => {
+  const isSelected = cartData.find((sel) => sel.id === id )
+  
+  if (isSelected){
+    let {qty} = isSelected
+    isSelected.qty = qty - 1
+    setCartData([...cartData])
+    
+    console.log(cartData)
+  }else{
+    data
+  }
+
+}```
+
+and now let's set function name into basic parameters of CartItem and set data into the useState we made
+
+```<View style={{ borderBottomWidth:2,marginBottom:10,flexDirection:"row"}}> 
+        <ItemCart
+            data = {cartData}
+            addQty ={updateAddStatsInc}
+            removeQty={updateReduceStatsInc
+        />
+    </View>```
+
+Complete Code is look like this
+
+```import { StyleSheet, Text, View } from 'react-native'
+import React, {useState} from 'react'
+import { CustomButton, CartItem } from 'act_mvvm_shop_cart' 
+
+const data = [
+  {
+      id:1,
+      prodName:'Alaska',
+      qty:0
+  },
+  {
+      id:5,
+      prodName:'Bear Brand',
+      qty:3
+  }]
+
+const App = () => {
+const [cartData, setCartData] = useState(data)
+
+const updateAddStatsInc = (id) => {
+  const isSelected = cartData.find((sel) => sel.id === id )
+  
+  if (isSelected){
+    let {qty} = isSelected
+    isSelected.qty = qty+1
+    setCartData([...cartData])
+    
+    console.log(cartData)
+  }else{
+    data
+  }
+
+}
+const updateReduceStatsInc = (id) => {
+  const isSelected = cartData.find((sel) => sel.id === id )
+  
+  if (isSelected){
+    let {qty} = isSelected
+    isSelected.qty = qty - 1
+    setCartData([...cartData])
+    
+    console.log(cartData)
+  }else{
+    data
+  }
+
+}
+
+  return (
+    <View style={{alignItems:'center'}}>
+
+     <View style={{ borderBottomWidth:2,
+        marginBottom:10,
+        flexDirection:"row"}} >
+      <CartItem
+      data = {cartData}
+      addQty ={updateAddStatsInc}
+      removeQty={updateReduceStatsInc}
+      />
+    </View>
+      
+    </View>
+  )
+}
+
+export default App```
+
+  
 
 # Node Version
 
