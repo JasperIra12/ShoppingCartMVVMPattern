@@ -35,6 +35,7 @@ or
 
 And Let say you have a Data like this
 
+
 ```const data = [
   {
       id:1,
@@ -46,7 +47,7 @@ And Let say you have a Data like this
       prodName:'Bear Brand',
       qty:3
   }]
-  ```
+```
 
 
    Create a state for your data, this state will be use to update Quantity of your data, just set your constant variable of data in useState, sample code like this
